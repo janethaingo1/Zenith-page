@@ -1,379 +1,54 @@
+/* Base Styles */
 :root {
-    /* Zenith Prestige: Midnight Navy Palette */
-    --primary: #001324;
-    --primary-container: #002D62;
-    --on-primary: #FFFFFF;
-    
-    --surface: #000B14;
-    --surface-container-low: #00121D;
-    --surface-container: #001A30;
-    --surface-container-high: #002440;
-    --surface-container-highest: #002E52;
-    
-    --tertiary: #C5A026; /* Muted Wealth Gold */
-    --gold-glow: rgba(197, 160, 38, 0.2);
-    
-    --emerald: #1B6D24; /* Growth Accent */
-    --bitcoin-orange: #F7931A;
-    
-    --text-primary: #E3E8ED;
-    --text-secondary: #94A3B8;
-    
-    --font-display: 'Manrope', sans-serif;
-    --font-body: 'Inter', sans-serif;
-    --font-mono: 'Roboto Mono', monospace;
-
-    /* Spacing & Elevation */
-    --space-lg: 8rem;
-    --space-md: 4rem;
-    --glass-blur: 24px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --zenith-navy: #00193c;
+    --zenith-amber: #e9c176;
+    --zenith-gold: #b4914b;
 }
 
 body {
-    background-color: var(--surface);
-    color: var(--text-primary);
-    font-family: var(--font-body);
-    overflow-x: hidden;
-    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 80%);
-    pointer-events: none;
-    z-index: -1;
-}
-
-header {
-    padding: 1rem 4rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 11, 20, 0.7);
-    backdrop-filter: blur(var(--glass-blur));
-    z-index: 1000;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-family: var(--font-display);
-    font-size: 1.2rem;
-    font-weight: 800;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-
-.logo span {
-    font-weight: 400;
-    color: var(--tertiary);
-    opacity: 0.9;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-weight: 300;
-    transition: 0.3s;
-    font-size: 0.95rem;
-}
-
-.nav-links a:hover {
-    color: var(--gold);
-}
-
-.btn {
-    padding: 0.85rem 2rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 700;
-    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-    font-family: var(--font-display);
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.btn-primary {
-    background: var(--tertiary);
-    color: var(--primary);
-}
-
-.btn-gold {
-    background: linear-gradient(135deg, var(--tertiary), #9D7D1A);
-    color: var(--primary);
-    box-shadow: 0 10px 30px var(--gold-glow);
-}
-
-.btn-outline {
-    background: transparent;
-    border: 1px solid rgba(148, 163, 184, 0.2);
-    color: var(--text-primary);
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    filter: brightness(1.1);
-}
-
-section {
-    padding: 8rem 2rem 4rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
-    align-items: center;
-    min-height: 90vh;
-}
-
-.hero-content h1 {
-    font-family: var(--font-display);
-    font-size: 4.5rem;
-    line-height: 1;
-    font-weight: 800;
-    margin-bottom: 2.5rem;
+/* Typography Customizations */
+h1, h2, h3 {
     letter-spacing: -0.02em;
 }
 
-.glow-text {
-    color: var(--tertiary);
-    position: relative;
+/* Animations & Transitions */
+.transition-all {
+    transition: all 0.3s ease-in-out;
 }
 
-.glow-text::after {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 60%;
-    height: 8px;
-    background: var(--tertiary);
-    opacity: 0.2;
-    z-index: -1;
+/* Component Specific Styles */
+.backdrop-blur-3xl {
+    backdrop-filter: blur(64px);
 }
 
-.hero-content p {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    max-width: 600px;
+/* Grayscale filter for images to maintain prestige look */
+.grayscale {
+    filter: grayscale(100%);
 }
 
-.cta-group {
-    display: flex;
-    gap: 1.5rem;
+.grayscale-0\.2 {
+    filter: grayscale(20%);
 }
 
-.btn-large {
-    padding: 1.25rem 2.5rem;
-    font-size: 1.1rem;
+/* Custom rounded corners for the 'Atelier' feel */
+.rounded-sm {
+    border-radius: 2px;
 }
 
-.hero-asset {
-    position: relative;
+/* Button hover effects */
+button {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#hero-img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    border: 1px solid var(--glass-border);
-    animation: floating 6s ease-in-out infinite;
+button:active {
+    transform: scale(0.98);
 }
 
-.skill-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.module-link {
-    display: block;
-    margin-top: 1.5rem;
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--accent-cyan);
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateX(-10px);
-}
-
-.skill-card:hover .module-link {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-@keyframes floating {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.section-title h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-}
-
-.section-title p {
-    color: var(--tertiary);
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.insight-console {
-    background: var(--surface-container);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.console-header {
-    background: var(--surface-container-high);
-    padding: 0.75rem 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.red { background: #FF5F56; }
-.yellow { background: #FFBD2E; }
-.green { background: #27C93F; }
-
-.console-title {
-    margin-left: 1rem;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-}
-
-.console-body {
-    padding: 2rem;
-    min-height: 200px;
-    font-family: var(--font-mono);
-    color: var(--text-primary);
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.glass {
-    background: var(--surface-container);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    padding: 3rem;
-    border-radius: 12px;
-    transition: 0.5s;
-}
-
-.glass:hover {
-    background: var(--surface-container-high);
-    transform: translateY(-10px);
-}
-
-.card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.bitcoin-icon { color: var(--bitcoin-orange); }
-.gold-icon { color: var(--tertiary); }
-.silver-icon { color: #C0C0C0; }
-
-.data-value {
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.data-trend {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-}
-
-.positive { color: #27C93F; }
-.negative { color: #FF5F56; }
-.neutral { color: var(--text-secondary); }
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.skill-card {
-    padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.skill-card:hover {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-footer {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-@media (max-width: 968px) {
-    #hero { grid-template-columns: 1fr; }
-    .hero-content h1 { font-size: 3.5rem; }
+/* Chart mock styles */
+.h-64 div {
+    transition: height 1s ease-out;
 }

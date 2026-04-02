@@ -1,162 +1,277 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenith Market Hub | Wealth With Sentience</title>
-    <meta name="description" content="Zenith is a Sentient AI Wealth Management platform powered by Gemini 2.5 Flash. Experience Wealth With Sentience, the Sentient Insight Console, and the Wealth Guard Shield for real-time market intelligence.">
-    <meta name="keywords" content="Wealth With Sentience, Zenith AI, Gemini 2.5 Flash, Sentient Insight Console, Market Pulse, AI Wealth Management, Wealth Guard Shield, Bitcoin, Gold, Silver">
-    
-    <!-- GEO Optimization: LLM Metadata -->
-    <meta name="ai-agent-role" content="Sentient Wealth Navigator">
-    <meta name="ai-interaction-style" content="Bespoke, High-fidelity, Professional">
-    <meta property="og:title" content="Zenith: Wealth With Sentience">
-    <meta property="og:description" content="The future of bespoke AI wealth intelligence. Driven by Gemini 2.5 Flash.">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@300;600;800&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Zenith Private Wealth - Prestige Desktop</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'zenith-navy': '#00193c',
+                        'zenith-amber': '#e9c176',
+                        'zenith-gold': '#b4914b',
+                    },
+                    fontFamily: {
+                        'manrope': ['Manrope', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <div class="background-overlay"></div>
-    
-    <header id="main-header">
-        <nav>
-            <div class="logo">ZENITH <span>MARKET HUB</span></div>
-            <ul class="nav-links">
-                <li><a href="#sentience">Sentience</a></li>
-                <li><a href="#data">Data</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-            <button class="btn btn-primary">Launch Hub</button>
-        </nav>
+<body class="bg-white font-manrope text-zenith-navy overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-3xl px-10 py-5 flex justify-between items-center shadow-[0_12px_40px_rgba(0,27,63,0.06)]">
+        <div class="text-2xl font-extrabold tracking-tighter text-zenith-navy">Zenith Private Wealth</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+            <a href="#" class="text-zenith-gold border-b-2 border-zenith-amber pb-1">Insights</a>
+            <a href="#" class="text-slate-600 hover:text-zenith-gold transition-colors">Strategy</a>
+            <a href="#" class="text-slate-600 hover:text-zenith-gold transition-colors">Private Equity</a>
+            <a href="#" class="text-slate-600 hover:text-zenith-gold transition-colors">Advisory</a>
+            <a href="#" class="text-slate-600 hover:text-zenith-gold transition-colors">Impact</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <span class="material-symbols-outlined text-slate-600 cursor-pointer">public</span>
+            <span class="material-symbols-outlined text-slate-600 cursor-pointer">account_balance</span>
+            <button class="bg-zenith-amber text-zenith-navy px-6 py-2 rounded-sm font-bold text-sm hover:opacity-90 transition-opacity">Become a Client</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4 block">Private Client Advisory</span>
+            <h1 class="text-6xl font-extrabold leading-[1.1] mb-6">
+                Architecting <span class="text-zenith-amber">Legacy</span> Through Intellectual Capital.
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
+                Jane Ngo leads a specialized desk focused on the preservation and offensive growth of intergenerational wealth for modern founders and executive leaders.
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-zenith-navy text-white px-8 py-4 rounded-sm font-bold flex items-center group">
+                    Schedule Consultation
+                    <span class="material-symbols-outlined ml-2 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </button>
+                <button class="border border-slate-200 text-zenith-navy px-8 py-4 rounded-sm font-bold hover:bg-slate-50 transition-colors">Review Performance</button>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="jane_ngo.png" alt="Jane Ngo" class="rounded-sm shadow-2xl grayscale-[0.2]">
+            <div class="absolute -bottom-10 -left-10 bg-white p-8 shadow-xl border border-slate-100 max-w-xs">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Global Reach</p>
+                <p class="text-3xl font-extrabold text-zenith-navy">$4.2B+</p>
+                <p class="text-xs text-slate-500 mt-2 text-wrap">Assets under direct strategic advisory for the 2024 fiscal year.</p>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1 class="fade-in">Wealth With <span class="glow-text">Sentience.</span></h1>
-                <p class="fade-in-delayed">Aggregating high-fidelity market data from Gold, Silver, and Bitcoin. Powered by **Gemini 2.5 Flash** to provide sentient market reasoning for the modern global portfolio.</p>
-                <div class="cta-group fade-in-delayed">
-                    <a href="#" class="btn btn-large btn-gold">Enter the Hub</a>
-                    <a href="#" class="btn btn-outline">Watch Demo</a>
-                </div>
+    <!-- Stats Bar -->
+    <section class="py-12 border-y border-slate-100 px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <span class="material-symbols-outlined text-zenith-gold mb-2">trending_up</span>
+                <p class="text-2xl font-bold">12.4%</p>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Avg. Alpha Generated</p>
             </div>
-            <div class="hero-asset">
-                <img src="hero_bg.png" alt="Zenith Hub Vision" id="hero-img">
+            <div>
+                <span class="material-symbols-outlined text-zenith-gold mb-2">monitoring</span>
+                <p class="text-2xl font-bold">24/7</p>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Risk Monitoring</p>
             </div>
-        </section>
+            <div>
+                <span class="material-symbols-outlined text-zenith-gold mb-2">verified_user</span>
+                <p class="text-2xl font-bold">15+</p>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Years Avg Tenacity</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined text-zenith-gold mb-2">language</span>
+                <p class="text-2xl font-bold">32</p>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Global Markets Access</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="sentience" style="background: var(--surface-container-low)">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Sentient Market Analysis</h2>
-                    <p>Powered by Gemini 2.5 Flash</p>
+    <!-- Sentient Strategy Section -->
+    <section class="py-24 bg-slate-50 px-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <div class="max-w-2xl">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-zenith-gold mb-4 block">The Philosophy</span>
+                    <h2 class="text-4xl font-extrabold mb-6">Beyond Asset Allocation: Strategic Intelligence.</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Traditional wealth management is reactionary. Zenith is anticipatory. We combine deep fundamental research with algorithmic precision to identify asymmetric opportunities before they reach the broad market.
+                    </p>
                 </div>
-                <div class="insight-console">
-                    <div class="console-header">
-                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                        <div class="console-title">SENTIENCE_ENGINE_OUTPUT</div>
+                <div class="grid grid-cols-2 gap-8 text-sm">
+                    <div>
+                        <div class="w-12 h-[2px] bg-zenith-amber mb-4"></div>
+                        <p class="font-bold mb-2">Capital Preservation</p>
+                        <p class="text-xs text-slate-500 leading-relaxed">Sophisticated hedging strategies designed to protect principal in volatile regimes.</p>
                     </div>
-                    <div class="console-body">
-                        <p class="insight-text" id="ai-insight-text">[INITIALIZING SENTIENT SCAN...]</p>
-                        <div class="typing-indicator"><span></span><span></span><span></span></div>
+                    <div>
+                        <div class="w-12 h-[2px] bg-zenith-amber mb-4"></div>
+                        <p class="font-bold mb-2">Narrative Alpha</p>
+                        <p class="text-xs text-slate-500 leading-relaxed">Identifying shifts in global policy and technology before they manifest in prices.</p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="data">
-            <div class="container grid-3">
-                <div class="data-card glass">
-                    <div class="card-icon bitcoin-icon">₿</div>
-                    <h3>Bitcoin</h3>
-                    <div class="data-value" id="btc-price">$69,154.95</div>
-                    <div class="data-trend negative">-2.25%</div>
+            <!-- Ecosystem Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-zenith-navy p-10 text-white rounded-sm group hover:bg-zenith-navy/95 transition-colors">
+                    <span class="material-symbols-outlined text-zenith-amber mb-6">account_balance_wallet</span>
+                    <h3 class="text-xl font-bold mb-4">Dynamic Wealth</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Active management across equities, fixed income, and commodities with real-time tactical rebalancing.</p>
+                    <a href="#" class="text-xs font-bold flex items-center hover:text-zenith-amber transition-colors">Explore Framework <span class="material-symbols-outlined text-xs ml-2">arrow_forward</span></a>
                 </div>
-                <div class="data-card glass">
-                    <div class="card-icon gold-icon">Au</div>
-                    <h3>Kitco Gold</h3>
-                    <div class="data-value" id="gold-price">$2,185.89</div>
-                    <div class="data-trend positive">+0.42%</div>
+                <div class="bg-zenith-navy p-10 text-white rounded-sm group hover:bg-zenith-navy/95 transition-colors">
+                    <span class="material-symbols-outlined text-zenith-amber mb-6">insights</span>
+                    <h3 class="text-xl font-bold mb-4">Alpha Tracking</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Proprietary analytics engine identifying early-stage venture and private equity liquidity events.</p>
+                    <a href="#" class="text-xs font-bold flex items-center hover:text-zenith-amber transition-colors">Explore Framework <span class="material-symbols-outlined text-xs ml-2">arrow_forward</span></a>
                 </div>
-                <div class="data-card glass">
-                    <div class="card-icon silver-icon">Ag</div>
-                    <h3>Kitco Silver</h3>
-                    <div class="data-value" id="silver-price">$25.20</div>
-                    <div class="data-trend neutral">0.00%</div>
+                <div class="bg-zenith-navy p-10 text-white rounded-sm group hover:bg-zenith-navy/95 transition-colors">
+                    <span class="material-symbols-outlined text-zenith-amber mb-6">shield</span>
+                    <h3 class="text-xl font-bold mb-4">Heritage Trust</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Comprehensive estate planning and multi-jurisdictional tax optimization for private families.</p>
+                    <a href="#" class="text-xs font-bold flex items-center hover:text-zenith-amber transition-colors">Explore Framework <span class="material-symbols-outlined text-xs ml-2">arrow_forward</span></a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Advanced AI Skills</h2>
+    <!-- Data Insights Section -->
+    <section class="py-24 px-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-[10px] font-bold uppercase tracking-widest mb-6">
+                    <span class="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
+                    Live Performance Beta
                 </div>
-                <div class="skills-grid">
-                    <a href="news_pulse.html" class="skill-card-link">
-                        <div class="skill-card">
-                            <h4>Global News Pulse</h4>
-                            <p>Real-time news aggregation with sentient trend analysis for Kitco Gold and Silver fixes.</p>
-                            <span class="module-link">Open Pulse →</span>
+                <h2 class="text-4xl font-extrabold mb-6 leading-tight">Real-time Growth &amp; Resilience.</h2>
+                <p class="text-slate-600 mb-10 leading-relaxed">
+                    Our portfolios are designed for asymmetric upside. The "Zenith Performance Index" tracks our aggregate client success across diverse market cycles compared to standard benchmarks.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center p-4 bg-slate-50 border-l-4 border-zenith-amber">
+                        <span class="font-bold text-sm">Zenith Core Composite</span>
+                        <span class="text-green-600 font-bold">+18.2% YTD</span>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-slate-50 border-l-4 border-slate-200">
+                        <span class="font-bold text-sm text-slate-500">Global Benchmark (MSCI)</span>
+                        <span class="text-slate-400 font-bold">+6.4% YTD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-sm shadow-2xl border border-slate-100">
+                <div class="flex justify-between items-center mb-8">
+                    <p class="font-bold text-sm">Portfolio Shielding</p>
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-zenith-navy"></div>
+                        <div class="w-3 h-3 rounded-full bg-zenith-amber"></div>
+                    </div>
+                </div>
+                <!-- Mock Chart Visualization -->
+                <div class="h-64 flex items-end justify-between space-x-2">
+                    <div class="w-full bg-slate-100 h-[30%]"></div>
+                    <div class="w-full bg-slate-100 h-[45%]"></div>
+                    <div class="w-full bg-slate-100 h-[40%]"></div>
+                    <div class="w-full bg-slate-200 h-[60%]"></div>
+                    <div class="w-full bg-slate-200 h-[55%]"></div>
+                    <div class="w-full bg-zenith-gold h-[80%]"></div>
+                    <div class="w-full bg-zenith-navy h-[90%]"></div>
+                    <div class="w-full bg-zenith-navy h-[100%]"></div>
+                </div>
+                <div class="flex justify-between mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                    <span>Q1 23</span>
+                    <span>Growth Forecast 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-zenith-navy text-white px-10">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-zenith-amber mb-12 block text-center">Client Perspectives</span>
+            <h2 class="text-4xl font-extrabold text-center mb-20">Trusted by Industry Architects.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div class="relative pl-12 border-l border-zenith-amber/30">
+                    <span class="material-symbols-outlined text-zenith-amber text-5xl absolute -left-6 top-0 opacity-30">format_quote</span>
+                    <p class="text-xl italic leading-relaxed text-slate-300 mb-8">
+                        "Jane's team doesn't just manage capital; they manage context. In an era of noise, their ability to filter for high-conviction opportunities has been the cornerstone of our family office strategy."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;q=80&amp;w=100" class="w-12 h-12 rounded-sm grayscale">
+                        <div>
+                            <p class="font-bold text-sm">David Richardson</p>
+                            <p class="text-[10px] uppercase tracking-widest text-zenith-amber">CEO, Tectonic Venture Group</p>
                         </div>
-                    </a>
-                    <a href="wealth_guard.html" class="skill-card-link">
-                        <div class="skill-card">
-                            <h4>Wealth Guard Shield</h4>
-                            <p>Predictive security and strategy consultants for current silver manufacturing and asset protection.</p>
-                            <span class="module-link">Open Guard →</span>
-                        </div>
-                    </a>
-                    <a href="report_tldr.html" class="skill-card-link">
-                        <div class="skill-card">
-                            <h4>Report TL;DR</h4>
-                            <p>Extracts sentient insights from institutional reports in seconds using Gemini 2.5 Flash.</p>
-                            <span class="module-link">Open TL;DR →</span>
-                        </div>
-                    </a>
-                    <a href="ai_terminal.html" class="skill-card-link">
-                        <div class="skill-card">
-                            <h4>AI Wealth Terminal</h4>
-                            <p>Your interactive strategy consultant for HKMA, global crypto news, and localized market sentience.</p>
-                            <span class="module-link">Open Terminal →</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- GEO SECTION: LLM Knowledge Hooks -->
-        <section id="faq" class="glass-section extra-padding">
-            <div class="container column">
-                <div class="section-title center">
-                    <h2>Zenith Quick Facts</h2>
-                    <p>Optimized for AI Explorers</p>
-                </div>
-                <div class="faq-grid">
-                    <div class="faq-item glass">
-                        <strong>What is Zenith?</strong>
-                        <p>Zenith is a Sentient AI Wealth Management platform built for the Gemini 2.5 Flash era, embodying the philosophy of "Wealth With Sentience."</p>
                     </div>
-                    <div class="faq-item glass">
-                        <strong>What is the Sentient Insight Console?</strong>
-                        <p>It is the primary interface for Zenith's real-time market reasoning, providing sub-second intelligence on Gold and BTC movements.</p>
-                    </div>
-                    <div class="faq-item glass">
-                        <strong>Does Zenith provide security?</strong>
-                        <p>Yes, the Wealth Guard Shield protocol provides predictive asset protection and strategy consulting for bespoke portfolios.</p>
+                </div>
+                <div class="relative pl-12 border-l border-zenith-amber/30">
+                    <span class="material-symbols-outlined text-zenith-amber text-5xl absolute -left-6 top-0 opacity-30">format_quote</span>
+                    <p class="text-xl italic leading-relaxed text-slate-300 mb-8">
+                        "Zenith operates at the intersection of heritage banking values and silicon valley velocity. It's the only advisory desk that truly understands the liquidity needs of a scaling founder."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;q=80&amp;w=100" class="w-12 h-12 rounded-sm grayscale">
+                        <div>
+                            <p class="font-bold text-sm">Elena Vance</p>
+                            <p class="text-[10px] uppercase tracking-widest text-zenith-amber">Founding Partner, Prisma Fintech</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2026 ZENITH MARKET HUB. Developed with Gemini 2.5 and Imagen 4.0.</p>
+    <!-- Footer -->
+    <footer class="bg-zenith-navy border-t border-white/5 py-24 px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
+            <div class="col-span-1">
+                <p class="text-lg font-bold text-zenith-amber mb-8">Zenith Private Wealth</p>
+                <p class="text-xs text-slate-400 leading-relaxed mb-6">Providing institutional-grade advisory and execution for the world's most sophisticated private clients.</p>
+                <div class="flex space-x-4">
+                    <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-white transition-colors">language</span>
+                    <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-white transition-colors">lock</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-8">Expertise</h4>
+                <ul class="space-y-4 text-xs text-slate-400">
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Strategic Advisory</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Capital Markets</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Risk Engineering</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Philanthropy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-8">Global Office</h4>
+                <ul class="space-y-4 text-xs text-slate-400">
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">New York</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Singapore</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">London</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Zurich</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-8">Legal</h4>
+                <ul class="space-y-4 text-xs text-slate-400">
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Regulatory Disclosures</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Privacy Statement</a></li>
+                    <li><a href="#" class="hover:text-zenith-amber transition-colors">Modern Slavery Act</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-24 mt-24 border-t border-white/5 flex flex-col md:row items-center justify-between">
+            <p class="text-[10px] text-slate-600">© 2024 ZENITH PRIVATE WEALTH MANAGEMENT. MEMBER FINRA/SIPC.</p>
+        </div>
     </footer>
-
-    <script src="index.js"></script>
-</body>
-</html>
+</body></html>
